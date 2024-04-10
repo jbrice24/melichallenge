@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Meli Challenge</string>
+    <string name="text_search_placeholder">Buscar en Mercado Libre</string>
+    <string name="text_search_icon">Search icon</string>
+    <string name="text_close_icon">Close icon</string>
+    <string name="text_image_not_available">Imagen no disponible</string>
+</resources>
