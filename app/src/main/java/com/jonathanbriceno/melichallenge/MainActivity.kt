@@ -23,12 +23,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val products by viewModel.products.observeAsState()
+            val loading by viewModel.loading.observeAsState()
             MeliChallengeTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = Color.White
                 ) {
-                    SearchPage(products = products.orEmpty()) {
+                    SearchPage(products = products.orEmpty(), loading = loading) {
                         executeSearch(it)
                     }
                 }
